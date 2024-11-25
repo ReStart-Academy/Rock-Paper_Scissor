@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="icon" href="logo1.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>ROCK-PAPER-SCISSORS</h1>
+        <div class="choices">
+            <button onclick="playGame('rock')"><i class="fa-solid fa-hand-back-fist"></i></button>
+            <button onclick="playGame('paper')"><i class="fa-solid fa-hand"></i></button>
+            <button onclick="playGame('scissors')"><i class="fa-solid fa-hand-scissors"></i></button>
+        </div>
+        <div class="your_computer_choice">
+            <p>YOUR CHOICE</p>
+
+            <p>COMPUTER'S CHOICE</p>
+        </div>
+        <div class="choice_pic">
+            <div id="player-choice">
+            </div>
+            <span>VS</span>
+            <div id="computer-choice">
+
+            </div>
+        </div>
+        <div class="results">
+            <p id="result">Result: </p>
+        </div>
+        <div class="score">
+            <p id="ply_score">Your Score: </p>
+            <p id="com_score">Computer's Score: </p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
